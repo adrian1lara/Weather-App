@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function getWeatherData(location) {
         
         const apiKey = 'f13a84b6cd7b43d8af904715230409'
-        const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`
+        const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`
 
         try {
             const response = await fetch(url)
